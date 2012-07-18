@@ -46,7 +46,7 @@ object Telnet {
             out.println(response)
           case Some((Command, line)) =>
             toRun = Some(line)
-          case Some(_, _) => None
+          case Some((_, _)) => None
           case None => None
         }
       }
